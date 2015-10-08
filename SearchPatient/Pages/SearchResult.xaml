@@ -10,7 +10,8 @@
                                 <Label Text="{Binding title}" VerticalOptions="Start"/>
                                 <Label Text="{Binding subtitle}" HorizontalOptions="Start" />
                                 <Label Text="{Binding Address}" HorizontalOptions="Start"/>
-                                <Button Text="{Binding ButtonTitle}" HorizontalOptions="End" Clicked="GetDirectionBtnClicked"/>
+                                <Button Text="{Binding ButtonTitle}" HorizontalOptions="Start" Clicked="GetDirectionButton_Clicked"/>
+                          
                             </StackLayout>
                         </StackLayout>
                     </ViewCell>

@@ -28,11 +28,18 @@ namespace SearchPatient
 //			datas.Add(new SearchData{ subtitle="Shinde"});
 //			datas.Add (new SearchData{ Address = "Pune" });
 			listView.ItemTemplate = new DataTemplate (typeof(CustomCell));
+
+			//MapModel m = new MapModel ();
+
+			//listView.ItemTemplate=	new DataTemplate (() => new CustomCell(m));
+		  
 		}
-		void GetDirectionBtnClicked(object sender,EventArgs e)
+
+		void GetDirectionButton_Clicked (object sender, EventArgs e)
 		{
-			DisplayAlert("You will redirect to map soon", null, "Ok");
+			this.Navigation.PopAsync ();
 		}
+
 	}
 }
 

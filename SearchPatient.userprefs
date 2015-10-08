@@ -1,16 +1,19 @@
 ﻿<Properties StartupItem="iOS/SearchPatient.iOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.2" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SearchPatient/Pages/SearchResult.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../Library/Frameworks/Mono.framework/Versions/4.0.4/lib/mono/4.5/Microsoft.Common.targets">
     <Files>
-      <File FileName="SearchPatient/Pages/SearchPatient.xaml" Line="1" Column="1" />
-      <File FileName="SearchPatient/Pages/SearchPatient.xaml.cs" Line="48" Column="4" />
-      <File FileName="SearchPatient/Pages/SearchResult.xaml" Line="13" Column="92" />
-      <File FileName="SearchPatient/Pages/SearchResult.xaml.cs" Line="32" Column="30" />
+      <File FileName="SearchPatient/CustomCell/CustomCell.cs" Line="19" Column="38" />
+      <File FileName="../../../../../Users/techilasolutions/Desktop/WorkingWithMaps/WorkingWithMaps/GeocoderPage.cs" Line="1" Column="1" />
+      <File FileName="../../../../../Users/techilasolutions/Desktop/WorkingWithMaps/WorkingWithMaps/MapAppPage.cs" Line="30" Column="12" />
+      <File FileName="SearchPatient/Pages/SearchResult.xaml" Line="5" Column="36" />
+      <File FileName="SearchPatient/Pages/SearchResult.xaml.cs" Line="34" Column="72" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/Versions/4.0.4/lib/mono/4.5/Microsoft.Common.targets" Line="17" Column="79" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/techilasolutions/Desktop/Project 2/SearchPatient/SearchPatient/Pages/SearchResult.xaml.cs" line="34" column="4" />
+      <Breakpoint file="/Yogi/MyData/Xamarin Work/SearchPatient/SearchPatient_git/SearchPatient/Pages/SearchResult.xaml.cs" line="40" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>

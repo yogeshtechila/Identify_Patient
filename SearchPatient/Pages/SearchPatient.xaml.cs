@@ -11,7 +11,7 @@ namespace SearchPatient
 		{
 			InitializeComponent ();
 			this.Title="Identity Patient";
-
+		
 			//SearchBtn.Image = "search.png";
 
 //				Device.OnPlatform(

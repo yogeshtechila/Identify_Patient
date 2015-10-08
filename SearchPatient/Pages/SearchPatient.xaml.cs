@@ -11,6 +11,16 @@ namespace SearchPatient
 		{
 			InitializeComponent ();
 			this.Title="Identity Patient";
+
+		
+			//SearchBtn.Image = "search.png";
+
+//				Device.OnPlatform(
+//				iOS: ImageSource.FromFile("Images/Default.png"),
+//				Android:  ImageSource.FromFile("waterfront.jpg"),
+//				WinPhone: ImageSource.FromFile("Images/waterfront.png"));
+
+
 		}
 
 		public void OnSearchClicked(object sender, EventArgs  e)

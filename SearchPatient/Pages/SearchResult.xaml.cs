@@ -25,6 +25,7 @@ namespace SearchPatient
 
 			listView.ItemTemplate = new DataTemplate (typeof(CustomCell));
 
+
 //
 //			var tap = new UITapGestureRecognizer(
 //				tap => UIApplication.SharedApplication.OpenUrl(new NSUrl("tel:" + contactlbl.Text))
@@ -45,6 +46,18 @@ namespace SearchPatient
 //		{
 //			DisplayAlert("You are contacting..", null, "Ok");
 //		}
+
+			//MapModel m = new MapModel ();
+
+			//listView.ItemTemplate=	new DataTemplate (() => new CustomCell(m));
+		  
+		}
+
+		void GetDirectionButton_Clicked (object sender, EventArgs e)
+		{
+			this.Navigation.PopAsync ();
+		}
+>>>>>>> b2eb93929fa693215271b45ae702b91c703d32b9
 
 	}
 }

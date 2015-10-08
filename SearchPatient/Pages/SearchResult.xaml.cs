@@ -53,12 +53,12 @@ namespace SearchPatient
 		  
 		}
 
-		void GetDirectionButton_Clicked (object sender, EventArgs e)
-		{
-			this.Navigation.PopAsync ();
-		}
->>>>>>> b2eb93929fa693215271b45ae702b91c703d32b9
+//		void GetDirectionButton_Clicked (object sender, EventArgs e)
+//		{
+//			this.Navigation.PopAsync ();
+//		}
+
 
 	}
-}
+
 

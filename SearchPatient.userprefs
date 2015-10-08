@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="iOS/SearchPatient.iOS.csproj">
+﻿<Properties StartupItem="Droid/SearchPatient.Droid.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.61a97406" />
   <MonoDevelop.Ide.Workbench ActiveDocument="SearchPatient/Pages/SearchPatient.xaml">
     <Files>

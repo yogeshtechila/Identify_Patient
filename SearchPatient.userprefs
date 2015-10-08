@@ -1,11 +1,12 @@
 ﻿<Properties StartupItem="iOS/SearchPatient.iOS.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.2" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SearchPatient/Pages/SearchResult.xaml">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.61a97406" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SearchPatient/Pages/SearchPatient.xaml">
     <Files>
-      <File FileName="SearchPatient/Pages/SearchPatient.xaml" Line="1" Column="1" />
-      <File FileName="SearchPatient/Pages/SearchPatient.xaml.cs" Line="48" Column="4" />
-      <File FileName="SearchPatient/Pages/SearchResult.xaml" Line="13" Column="92" />
-      <File FileName="SearchPatient/Pages/SearchResult.xaml.cs" Line="32" Column="30" />
+      <File FileName="SearchPatient/Pages/SearchPatient.xaml" Line="52" Column="1" />
+      <File FileName="SearchPatient/Pages/SearchPatient.xaml.cs" Line="1" Column="1" />
+      <File FileName="SearchPatient/Pages/SearchResult.xaml.cs" Line="1" Column="1" />
+      <File FileName="Droid/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="SearchPatient/SearchPatient.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

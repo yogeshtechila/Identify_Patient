@@ -11,27 +11,27 @@ namespace SearchPatient
 			//instantiate each of our views
 			StackLayout cellWrapper = new StackLayout ();
 			StackLayout horizontalLayout = new StackLayout ();
-			Label left = new Label ();
-			Label right = new Label ();
-			Label adres = new Label ();
+			Label namelbl = new Label();
+			Label addresslbl = new Label();
+			Label contactlbl = new Label();
+//			Button contactlbl = new Button ();
 			Button GetDir = new Button ();
 
 			//set bindings
-			left.SetBinding (Label.TextProperty, "title");
-			right.SetBinding (Label.TextProperty, "subtitle");
-			adres.SetBinding (Label.TextProperty, "Address");
+			namelbl.SetBinding (Label.TextProperty, "name");
+			addresslbl.SetBinding (Label.TextProperty, "address");
+			contactlbl.SetBinding (Label.TextProperty, "contact");
 			GetDir.SetBinding (Button.TextProperty, "ButtonTitle");
 
+
+
 			//Set properties for desired design
-//			cellWrapper.BackgroundColor = Color.FromHex ("#eee");
 			horizontalLayout.Orientation = StackOrientation.Vertical;
-//			left.TextColor = Color.FromHex ("#f35e20");
-//			right.TextColor = Color.FromHex ("503026");
 
 			//add views to the view hierarchy
-			horizontalLayout.Children.Add (left);
-			horizontalLayout.Children.Add (right);
-			horizontalLayout.Children.Add (adres);
+			horizontalLayout.Children.Add (namelbl);
+			horizontalLayout.Children.Add (addresslbl);
+			horizontalLayout.Children.Add (contactlbl);
 			horizontalLayout.Children.Add (GetDir);
 			cellWrapper.Children.Add (horizontalLayout);
 			View = cellWrapper;	

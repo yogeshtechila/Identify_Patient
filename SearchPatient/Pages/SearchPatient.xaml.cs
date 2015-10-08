@@ -11,19 +11,11 @@ namespace SearchPatient
 		{
 			InitializeComponent ();
 			this.Title="Identity Patient";
-
-			//SearchBtn.Image = "search.png";
-
-//				Device.OnPlatform(
-//				iOS: ImageSource.FromFile("Images/Default.png"),
-//				Android:  ImageSource.FromFile("waterfront.jpg"),
-//				WinPhone: ImageSource.FromFile("Images/waterfront.png"));
-
 		}
 
-		void OnSearchClicked(object sender, EventArgs  e)
+		public void OnSearchClicked(object sender, EventArgs  e)
 		{
-
+			
 			if((string.IsNullOrEmpty(FirstNameText.Text)) && (string.IsNullOrEmpty(LastNameText.Text)))
 			{			
 				DisplayAlert ("Please enter First name or Last name!", null, "Ok");
@@ -34,7 +26,7 @@ namespace SearchPatient
 			}
 		}
 
-		void OnRadioClicked(object sender, EventArgs  e)
+		public void OnRadioClicked(object sender, EventArgs  e)
 		{
 			var button = (Button)sender;
 
@@ -50,8 +42,7 @@ namespace SearchPatient
 			}
 		}
 
-
-		void OnFemaleRadioClicked(object sender, EventArgs  e)
+		public void OnFemaleRadioClicked(object sender, EventArgs  e)
 		{
 			var button = (Button)sender;
 

@@ -5,10 +5,10 @@ namespace SearchPatient
 {
 	public class SearchData
 	{
-		public string title {get; set;}
-		public string subtitle {get; set;}
-		public string Address{get; set;}
-		public String ButtonTitle{ get; set;}
+		public string name {get; set;}
+		public string address {get; set;}
+		public string contact{get; set;}
+		public string ButtonTitle{ get; set;}
 	}
 }
 

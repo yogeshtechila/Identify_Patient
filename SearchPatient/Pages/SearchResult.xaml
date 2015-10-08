@@ -7,10 +7,10 @@
                     <ViewCell>
                         <StackLayout Orientation="Vertical">
                             <StackLayout Orientation="Horizontal">                              
-                                <Label Text="{Binding title}" VerticalOptions="Start"/>
-                                <Label Text="{Binding subtitle}" HorizontalOptions="Start" />
-                                <Label Text="{Binding Address}" HorizontalOptions="Start"/>
-                                <Button Text="{Binding ButtonTitle}" HorizontalOptions="End" Clicked="GetDirectionBtnClicked"/>
+                                <Label Text="{Binding name}" VerticalOptions="Start"/>
+                                <Label Text="{Binding address}" HorizontalOptions="Start" />
+                                <Label Text="{Binding contact}" HorizontalOptions="Start" TextColor="Red"/>
+                                <Button Text="{Binding ButtonTitle}" VerticalOptions="Center" Clicked  ="OnGetDirectionBtnClicked" TextColor="Red"/>
                             </StackLayout>
                         </StackLayout>
                     </ViewCell>
@@ -19,3 +19,15 @@
         </ListView>
     </ContentPage.Content>
 </ContentPage>
+
+
+
+<!--<Label
+      FontSize="14"
+      Text="{Binding Phone}">
+      <Label.GestureRecognizers>
+         <TapGestureRecognizer
+            Tapped="OnPhoneTapped">
+         </TapGestureRecognizer>
+      </Label.GestureRecognizers>
+   </Label>--> 

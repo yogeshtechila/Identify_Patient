@@ -15,24 +15,37 @@ namespace SearchPatient
 			InitializeComponent ();
 			listView.ItemsSource = datas;
 
-			SearchData d = new SearchData ();
-		
+			SearchData d = new SearchData ();		
 
-			d.title="Alex M Manade";
-			d.subtitle="Baton Rouge General Mid City 1007 Bluebonnet Blvd,Baton Blvd, Louisiana, USA 70816";
-			d.Address="Contact @2255436789";
-			d.ButtonTitle = "Get Direction";
-				
+			d.name="Alex M Manade";
+			d.address="Baton Rouge General Mid City 1007 Bluebonnet Blvd,Baton Blvd, Louisiana, USA 70816";
+			d.contact="Contact @2255436789";
+			d.ButtonTitle = "Get Direction";				
 			datas.Add (d);
-//			datas.Add(new SearchData{ title="Prajakta "});
-//			datas.Add(new SearchData{ subtitle="Shinde"});
-//			datas.Add (new SearchData{ Address = "Pune" });
+
 			listView.ItemTemplate = new DataTemplate (typeof(CustomCell));
+
+//
+//			var tap = new UITapGestureRecognizer(
+//				tap => UIApplication.SharedApplication.OpenUrl(new NSUrl("tel:" + contactlbl.Text))
+//			);
+//
+//			contactlbl.UserInteractionEnabled = true;
+//
+//			contactlbl.AddGestureRecognizer(tap);
 		}
-		void GetDirectionBtnClicked(object sender,EventArgs e)
+
+
+
+		public void OnGetDirectionBtnClicked(object sender, EventArgs e)
 		{
-			DisplayAlert("You will redirect to map soon", null, "Ok");
+		DisplayAlert("You will redirect to map soon", null, "Ok");
 		}
+//		public void OnContactBtnClicked(object sender, EventArgs e)
+//		{
+//			DisplayAlert("You are contacting..", null, "Ok");
+//		}
+
 	}
 }
 

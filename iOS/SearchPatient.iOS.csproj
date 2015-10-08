@@ -112,8 +112,9 @@
     <BundleResource Include="Resources\unchecked%402x.png" />
     <BundleResource Include="Resources\download.jpeg" />
     <BundleResource Include="Resources\bg.jpeg" />
-    <BundleResource Include="Resources\gray.jpeg" />
     <BundleResource Include="Resources\gray1.jpg" />
+    <BundleResource Include="gray.jpeg" />
+    <BundleResource Include="Resources\gray.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

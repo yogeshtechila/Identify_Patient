@@ -1,7 +1,7 @@
-/Users/techilasolutions/Desktop/Project 2/SearchPatient/UITests/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
-/Users/techilasolutions/Desktop/Project 2/SearchPatient/UITests/bin/Debug/SearchPatient.UITests.dll.mdb
-/Users/techilasolutions/Desktop/Project 2/SearchPatient/UITests/bin/Debug/SearchPatient.UITests.dll
-/Users/techilasolutions/Desktop/Project 2/SearchPatient/UITests/obj/Debug/SearchPatient.UITests.dll
-/Users/techilasolutions/Desktop/Project 2/SearchPatient/UITests/obj/Debug/SearchPatient.UITests.dll.mdb
-/Users/techilasolutions/Desktop/Project 2/SearchPatient/UITests/bin/Debug/nunit.framework.dll
-/Users/techilasolutions/Desktop/Project 2/SearchPatient/UITests/bin/Debug/Xamarin.UITest.dll
+/Users/techilasolutions/Desktop/Project 2/Search_Patient_Demo/UITests/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/techilasolutions/Desktop/Project 2/Search_Patient_Demo/UITests/bin/Debug/SearchPatient.UITests.dll.mdb
+/Users/techilasolutions/Desktop/Project 2/Search_Patient_Demo/UITests/bin/Debug/SearchPatient.UITests.dll
+/Users/techilasolutions/Desktop/Project 2/Search_Patient_Demo/UITests/obj/Debug/SearchPatient.UITests.dll
+/Users/techilasolutions/Desktop/Project 2/Search_Patient_Demo/UITests/obj/Debug/SearchPatient.UITests.dll.mdb
+/Users/techilasolutions/Desktop/Project 2/Search_Patient_Demo/UITests/bin/Debug/nunit.framework.dll
+/Users/techilasolutions/Desktop/Project 2/Search_Patient_Demo/UITests/bin/Debug/Xamarin.UITest.dll

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SearchPatient.SearchPatient">
+
+<ScrollView>
+<!-- <Frame OutlineColor="Black" >-->
+
+<Grid Padding="50, 10,50, 50" >
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+
+<Image Source="gray.jpeg"  Grid.Column="0"  Grid.RowSpan="14" VerticalOptions="Fill"/>
+
+
+    <Label Grid.Row="1" Grid.Column="0"  Text="First Name:"/>
+    <Entry x:Name="FirstNameText" Grid.Row="2" Grid.Column="0" />
+    <Label Grid.Row="3" Grid.Column="0"  Text="Last Name:"/>
+    <Entry  x:Name="LastNameText" Grid.Row="4" Grid.Column="0"/>
+    <Label Grid.Row="5" Grid.Column="0"  Text="Date Of Birth:"/>
+    <DatePicker x:Name="DatePickerDate" Grid.Row="6" Grid.Column="0"/>
+    <Label Grid.Row="7" Grid.Column="0"  Text="Gender:" VerticalOptions="End"/>
+
+    <Button x:Name="radioButton1" Grid.Row="8" Grid.Column="0" Image="unchecked.png" Clicked="OnRadioClicked" HorizontalOptions="Start" VerticalOptions="Start"/>
+    <Label  Grid.Row="8" Grid.Column="0" Text="Male" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+    <Button x:Name="radioButton2" Grid.Row="9" Grid.Column="0" Image="unchecked.png" Clicked="OnFemaleRadioClicked" HorizontalOptions="Start" VerticalOptions="Start"/>
+    <Label  Grid.Row="9" Grid.Column="0" Text="Female" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+    <Label Grid.Row="10" Grid.Column="0"  Text="Facility:"/>
+    <Entry  x:Name="FacilityText" Grid.Row="11" Grid.Column="0"/>
+
+    <Button x:Name="SearchBtn" Grid.Row="12" Grid.Column="0"  Clicked="OnSearchClicked" 
+    HorizontalOptions="End" TextColor="Red" FontSize="20" Image="search.png"/>
+
+   </Grid>
+
+<!--      <Label Text="Product from ComTec" HorizontalOptions="End"></Label>-->
+
+
+<!--   </Frame>-->
+   </ScrollView>
+</ContentPage>

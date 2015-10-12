@@ -12,17 +12,33 @@ namespace SearchPatient
 			InitializeComponent ();
 			this.Title="Identity Patient";
 
-		
-			//SearchBtn.Image = "search.png";
+			Dictionary<string, string> facility = new Dictionary<string, string> {
+				{ "HospitalName1", "Poona Hospital" }, 
+				{ "HospitalName2",  "Ruby Hospital" },
+				{ "HospitalName3", "Sayadri Hospital" },       
+				{ "HospitalName4", "Nobel Hospital" },
+				{ "HospitalName5", "Sanjivini Hospital" },      
+				{ "HospitalName6", "Jahangir Hospital" }
+			};
 
-//				Device.OnPlatform(
-//				iOS: ImageSource.FromFile("Images/Default.png"),
-//				Android:  ImageSource.FromFile("waterfront.jpg"),
-//				WinPhone: ImageSource.FromFile("Images/waterfront.png"));
+			foreach (string facilityName in facility.Values)
+			{
+				FacilityText.Items.Add(facilityName);
+			}
 
-
+			FacilityText.SelectedIndexChanged += (sender, args) =>
+			{
+//				if (picker.SelectedIndex == -1)
+//				{
+//					boxView.Color = Color.Default;
+//				}
+//				else
+//				{
+//					string colorName = picker.Items[picker.SelectedIndex];
+//					boxView.Color = nameToColor[colorName];
+//				}
+			};
 		}
-
 		public void OnSearchClicked(object sender, EventArgs  e)
 		{
 			

@@ -60,6 +60,12 @@
     <Reference Include="Xamarin.Forms.Platform">
       <HintPath>..\packages\Xamarin.Forms.1.5.0.6447\lib\MonoAndroid10\Xamarin.Forms.Platform.dll</HintPath>
     </Reference>
+    <Reference Include="Lotz.Xam.Messaging.Abstractions">
+      <HintPath>..\packages\Xam.Plugins.Messaging.2.1.0\lib\MonoAndroid10\Lotz.Xam.Messaging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Lotz.Xam.Messaging">
+      <HintPath>..\packages\Xam.Plugins.Messaging.2.1.0\lib\MonoAndroid10\Lotz.Xam.Messaging.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SearchPatient\SearchPatient.csproj">
@@ -93,5 +99,7 @@
     <AndroidResource Include="Resources\drawable\gray.jpeg" />
     <AndroidResource Include="Resources\drawable\search.png" />
     <AndroidResource Include="Resources\drawable\unchecked.png" />
+    <AndroidResource Include="Resources\drawable\search2.png" />
+    <AndroidResource Include="Resources\drawable\border.png" />
   </ItemGroup>
 </Project>

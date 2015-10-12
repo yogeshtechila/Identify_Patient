@@ -1,35 +1,21 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SearchPatient.SearchResult">
 	<ContentPage.Content>
-        <ListView  x:Name="listView" RowHeight="150">
+        <ListView  x:Name="listView" RowHeight="140">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Orientation="Vertical">
-                            <StackLayout Orientation="Horizontal">                              
-
+                        <StackLayout Orientation="Vertical"> 
+                           <StackLayout Orientation="Horizontal">                         
                                 <Label Text="{Binding name}" VerticalOptions="Start"/>
-                                <Label Text="{Binding address}" HorizontalOptions="Start" />
-                                <Label Text="{Binding contact}" HorizontalOptions="Start" TextColor="Red"/>
-                                <Button Text="{Binding ButtonTitle}" VerticalOptions="Center" Clicked  ="OnGetDirectionBtnClicked" TextColor="Red"/>
-
-                            </StackLayout>
-                        </StackLayout>
+                                <Label Text="{Binding address}" HorizontalOptions="Start"/>
+                                <Button Text="{Binding contact}" HorizontalOptions="Start"/>
+                                <Button Text="{Binding ButtonTitle}" HorizontalOptions="Center"/>
+                           </StackLayout>
+                       </StackLayout>                      
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
     </ContentPage.Content>
 </ContentPage>
-
-
-
-<!--<Label
-      FontSize="14"
-      Text="{Binding Phone}">
-      <Label.GestureRecognizers>
-         <TapGestureRecognizer
-            Tapped="OnPhoneTapped">
-         </TapGestureRecognizer>
-      </Label.GestureRecognizers>
-   </Label>--> 

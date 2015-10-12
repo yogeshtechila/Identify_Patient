@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using System.Collections.ObjectModel;
+using Lotz.Xam.Messaging;
 
 namespace SearchPatient
 {
@@ -16,23 +17,19 @@ namespace SearchPatient
 
 			Label namelbl = new Label();
 			Label addresslbl = new Label();
-			Label contactlbl = new Label();
-//			Button contactlbl = new Button ();
+			Button contactBtn = new Button();
 			Button GetDir = new Button ();
 
 
+
 			GetDir.Clicked += GetDir_Clicked;
-
-			//GetDir.Clicked += (sender, args) => _model.getDirection ();
-
+			contactBtn.Clicked+= ContactBtn_Clicked;
 
 			//set bindings
 			namelbl.SetBinding (Label.TextProperty, "name");
 			addresslbl.SetBinding (Label.TextProperty, "address");
-			contactlbl.SetBinding (Label.TextProperty, "contact");
+			contactBtn.SetBinding (Button.TextProperty, "contact");
 			GetDir.SetBinding (Button.TextProperty, "ButtonTitle");
-
-
 
 			//Set properties for desired design
 			horizontalLayout.Orientation = StackOrientation.Vertical;
@@ -40,10 +37,17 @@ namespace SearchPatient
 			//add views to the view hierarchy
 			horizontalLayout.Children.Add (namelbl);
 			horizontalLayout.Children.Add (addresslbl);
-			horizontalLayout.Children.Add (contactlbl);
+			horizontalLayout.Children.Add (contactBtn);
 			horizontalLayout.Children.Add (GetDir);
 			cellWrapper.Children.Add (horizontalLayout);
 			View = cellWrapper;	
+		}
+
+		void ContactBtn_Clicked (object sender, EventArgs e)
+		{
+			var PhoneCallTask = MessagingPlugin.PhoneDialer;  
+			if (PhoneCallTask.CanMakePhoneCall)  
+				PhoneCallTask.MakePhoneCall("2255436789"); 
 		}
 
 		void GetDir_Clicked (object sender, EventArgs e)

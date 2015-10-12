@@ -27,8 +27,7 @@
         <RowDefinition Height="Auto"/>
     </Grid.RowDefinitions>
 
-<!--<Image Source="gray"  Grid.Column="0"  Grid.RowSpan="14" VerticalOptions="Fill"/>-->
-
+<Image Source="border" Grid.Column="0" Grid.Row="0" Grid.RowSpan="20" VerticalOptions="FillAndExpand"/>
 
     <Label Grid.Row="1" Grid.Column="0"  Text="First Name:"/>
     <Entry x:Name="FirstNameText" Grid.Row="2" Grid.Column="0" />
@@ -45,16 +44,14 @@
     <Label  Grid.Row="9" Grid.Column="0" Text="Female" HorizontalOptions="Center" VerticalOptions="Center"/>
 
     <Label Grid.Row="10" Grid.Column="0"  Text="Facility:"/>
-    <Entry  x:Name="FacilityText" Grid.Row="11" Grid.Column="0"/>
+    <Picker x:Name="FacilityText" Grid.Row="11" Grid.Column="0"/>
 
-<Button x:Name="SearchBtn" Grid.Row="12" Grid.Column="0"  Clicked="OnSearchClicked" 
+	<Button x:Name="SearchBtn" Grid.Row="12" Grid.Column="0"  Clicked="OnSearchClicked" 
     HorizontalOptions="End" TextColor="Red" FontSize="20" Image="search"/>
 
    </Grid>
 
 <!--      <Label Text="Product from ComTec" HorizontalOptions="End"></Label>-->
-
-
 <!--   </Frame>-->
    </ScrollView>
 </ContentPage>

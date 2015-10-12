@@ -86,6 +86,12 @@
     <Reference Include="Xamarin.Forms.Maps">
       <HintPath>..\packages\Xamarin.Forms.Maps.1.5.0.6447\lib\Xamarin.iOS10\Xamarin.Forms.Maps.dll</HintPath>
     </Reference>
+    <Reference Include="Lotz.Xam.Messaging.Abstractions">
+      <HintPath>..\packages\Xam.Plugins.Messaging.2.1.0\lib\Xamarin.iOS10\Lotz.Xam.Messaging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Lotz.Xam.Messaging">
+      <HintPath>..\packages\Xam.Plugins.Messaging.2.1.0\lib\Xamarin.iOS10\Lotz.Xam.Messaging.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SearchPatient\SearchPatient.csproj">
@@ -121,6 +127,8 @@
     <BundleResource Include="Resources\gray1.jpg" />
     <BundleResource Include="gray.jpeg" />
     <BundleResource Include="Resources\gray.jpeg" />
+    <BundleResource Include="Resources\search2.png" />
+    <BundleResource Include="Resources\border.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

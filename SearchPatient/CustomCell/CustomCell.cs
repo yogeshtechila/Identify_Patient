@@ -14,6 +14,7 @@ namespace SearchPatient
 			//instantiate each of our views
 			StackLayout cellWrapper = new StackLayout ();
 			StackLayout horizontalLayout = new StackLayout ();
+			StackLayout buttonContainer = new StackLayout ();
 
 			Label namelbl = new Label();
 			Label addresslbl = new Label();
@@ -37,8 +38,11 @@ namespace SearchPatient
 			//add views to the view hierarchy
 			horizontalLayout.Children.Add (namelbl);
 			horizontalLayout.Children.Add (addresslbl);
-			horizontalLayout.Children.Add (contactBtn);
-			horizontalLayout.Children.Add (GetDir);
+
+			buttonContainer.Orientation = StackOrientation.Horizontal;
+			buttonContainer.Children.Add (contactBtn);
+			buttonContainer.Children.Add (GetDir);
+			horizontalLayout.Children.Add (buttonContainer);
 			cellWrapper.Children.Add (horizontalLayout);
 			View = cellWrapper;	
 		}

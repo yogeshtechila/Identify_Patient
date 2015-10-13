@@ -46,12 +46,7 @@ BackgroundImage="border">
         <RowDefinition Height="Auto"/>
     </Grid.RowDefinitions>
 <!--    <Image Source="border" VerticalOptions="FillAndExpand" Grid.RowSpan="15"/> -->
-    <Label Grid.Row="1" Grid.Column="0"  Text="First Name:" />
-    <Entry x:Name="FirstNameText" Grid.Row="2" Grid.Column="0"/>
-
-
-   
-
+  
     <Label Grid.Row="1" Grid.Column="0"  Text="First Name:"/>
     <Entry x:Name="FirstNameText" Grid.Row="2" Grid.Column="0" />
 
@@ -81,7 +76,7 @@ BackgroundImage="border">
 
 <!--</Grid></RelativeLayout>-->
 
-
+</Grid>
 
    </ScrollView>
 </ContentPage>

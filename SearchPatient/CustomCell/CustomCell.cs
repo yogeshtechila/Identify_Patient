@@ -26,6 +26,8 @@ namespace SearchPatient
 			GetDir.Clicked += GetDir_Clicked;
 			contactBtn.Clicked+= ContactBtn_Clicked;
 
+			namelbl.FontFamily = Device.OnPlatform ("Arial", null, null);
+
 			//set bindings
 			namelbl.SetBinding (Label.TextProperty, "name");
 			addresslbl.SetBinding (Label.TextProperty, "address");
@@ -45,6 +47,7 @@ namespace SearchPatient
 			horizontalLayout.Children.Add (buttonContainer);
 			cellWrapper.Children.Add (horizontalLayout);
 			View = cellWrapper;	
+
 		}
 
 		void ContactBtn_Clicked (object sender, EventArgs e)

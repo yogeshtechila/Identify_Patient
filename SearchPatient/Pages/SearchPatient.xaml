@@ -3,8 +3,21 @@
 
 <ScrollView>
 <!-- <Frame OutlineColor="Black" >-->
+<!--<RelativeLayout>
+    <Image Source="gray1.jpg" Opacity="0.3"
+                RelativeLayout.WidthConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                RelativeLayout.HeightConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
 
-<Grid Padding="50, 10,50, 50" >
+                  <Grid RelativeLayout.WidthConstraint=
+              "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+            RelativeLayout.HeightConstraint=
+              "{ConstraintExpression Type=RelativeToParent, Property=Height}">-->
+<!-- <Image Source="border" VerticalOptions="FillAndExpand" Grid.RowSpan="15"/>-->
+
+<Grid x:Name="SearchFormGrid" Padding="50, 10,50, 50" >
+
     <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*"/>
     </Grid.ColumnDefinitions>
@@ -27,7 +40,7 @@
         <RowDefinition Height="Auto"/>
     </Grid.RowDefinitions>
 
-<Image Source="border" Grid.Column="0" Grid.Row="0" Grid.RowSpan="20" VerticalOptions="FillAndExpand"/>
+   
 
     <Label Grid.Row="1" Grid.Column="0"  Text="First Name:"/>
     <Entry x:Name="FirstNameText" Grid.Row="2" Grid.Column="0" />
@@ -53,5 +66,6 @@
 
 <!--      <Label Text="Product from ComTec" HorizontalOptions="End"></Label>-->
 <!--   </Frame>-->
+<!--</Grid></RelativeLayout>-->
    </ScrollView>
 </ContentPage>

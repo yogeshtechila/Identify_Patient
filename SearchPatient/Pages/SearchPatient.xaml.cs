@@ -38,6 +38,9 @@ namespace SearchPatient
 //					boxView.Color = nameToColor[colorName];
 //				}
 			};
+
+
+
 		}
 		public void OnSearchClicked(object sender, EventArgs  e)
 		{
@@ -81,6 +84,8 @@ namespace SearchPatient
 				button.Image = "unchecked.png";
 			}
 		}
+
+
 
 	}
 }

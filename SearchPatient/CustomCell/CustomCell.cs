@@ -18,31 +18,40 @@ namespace SearchPatient
 
 			Label namelbl = new Label();
 			Label addresslbl = new Label();
+			Label Contactlbl = new Label();
 			Button contactBtn = new Button();
 			Button GetDir = new Button ();
 
-
+			namelbl.FontAttributes =FontAttributes.Bold;
+			addresslbl.FontSize = Device.GetNamedSize(NamedSize.Small, typeof(Label));
+			Contactlbl.FontAttributes = FontAttributes.Italic;
+			contactBtn.FontAttributes = FontAttributes.Italic;
+			GetDir.FontAttributes = FontAttributes.Italic;
+			Contactlbl.TextColor = Color.Red;
+			contactBtn.TextColor = Color.Red;
+			GetDir.TextColor = Color.Red;
 
 			GetDir.Clicked += GetDir_Clicked;
 			contactBtn.Clicked+= ContactBtn_Clicked;
 
 			//set bindings
-			namelbl.SetBinding (Label.TextProperty, "name");
-			addresslbl.SetBinding (Label.TextProperty, "address");
-			contactBtn.SetBinding (Button.TextProperty, "contact");
-			GetDir.SetBinding (Button.TextProperty, "ButtonTitle");
+			namelbl.SetBinding(Label.TextProperty,"name");
+			addresslbl.SetBinding(Label.TextProperty,"address");
+			Contactlbl.SetBinding (Label.TextProperty,"contacttext");
+			contactBtn.SetBinding (Button.TextProperty,"contact");
+			GetDir.SetBinding(Button.TextProperty,"ButtonTitle");
 
 			//Set properties for desired design
 			horizontalLayout.Orientation = StackOrientation.Vertical;
-
 			//add views to the view hierarchy
 			horizontalLayout.Children.Add (namelbl);
 			horizontalLayout.Children.Add (addresslbl);
 
 			buttonContainer.Orientation = StackOrientation.Horizontal;
-			buttonContainer.Children.Add (contactBtn);
-			buttonContainer.Children.Add (GetDir);
-			horizontalLayout.Children.Add (buttonContainer);
+			buttonContainer.Children.Add(Contactlbl);
+			buttonContainer.Children.Add(contactBtn);
+			buttonContainer.Children.Add(GetDir);
+			horizontalLayout.Children.Add(buttonContainer);
 			cellWrapper.Children.Add (horizontalLayout);
 			View = cellWrapper;	
 		}

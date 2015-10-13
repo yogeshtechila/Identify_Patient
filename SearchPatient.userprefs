@@ -1,10 +1,9 @@
 ﻿<Properties StartupItem="iOS/SearchPatient.iOS.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SearchPatient/Pages/SearchPatient.xaml">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SearchPatient/Pages/SearchResult.xaml">
     <Files>
-      <File FileName="SearchPatient/Pages/SearchPatient.xaml" Line="30" Column="52" />
-      <File FileName="SearchPatient/Pages/SearchPatient.xaml.cs" Line="1" Column="1" />
-      <File FileName="SearchPatient/obj/Debug/SearchPatient.Pages.SearchPatient.xaml.g.cs" Line="1" Column="1" />
+      <File FileName="SearchPatient/Pages/SearchResult.xaml" Line="25" Column="123" />
+      <File FileName="SearchPatient/CustomCell/CustomCell.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SearchPatient.SearchPatient">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SearchPatient.SearchPatient"
+BackgroundImage="border">
 
-<ScrollView>
+<ScrollView >
 <!-- <Frame OutlineColor="Black" >-->
 <!--<RelativeLayout>
     <Image Source="gray1.jpg" Opacity="0.3"
@@ -17,6 +18,11 @@
 <!-- <Image Source="border" VerticalOptions="FillAndExpand" Grid.RowSpan="15"/>-->
 
 <Grid x:Name="SearchFormGrid" Padding="50, 10,50, 50" >
+
+
+
+<Grid Padding="30, 15, 30, 40">
+
 
     <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*"/>
@@ -39,33 +45,43 @@
         <RowDefinition Height="Auto"/>
         <RowDefinition Height="Auto"/>
     </Grid.RowDefinitions>
+<!--    <Image Source="border" VerticalOptions="FillAndExpand" Grid.RowSpan="15"/> -->
+    <Label Grid.Row="1" Grid.Column="0"  Text="First Name:" />
+    <Entry x:Name="FirstNameText" Grid.Row="2" Grid.Column="0"/>
+
 
    
 
     <Label Grid.Row="1" Grid.Column="0"  Text="First Name:"/>
     <Entry x:Name="FirstNameText" Grid.Row="2" Grid.Column="0" />
+
     <Label Grid.Row="3" Grid.Column="0"  Text="Last Name:"/>
     <Entry  x:Name="LastNameText" Grid.Row="4" Grid.Column="0"/>
+
     <Label Grid.Row="5" Grid.Column="0"  Text="Date Of Birth:"/>
     <DatePicker x:Name="DatePickerDate" Grid.Row="6" Grid.Column="0"/>
+
     <Label Grid.Row="7" Grid.Column="0"  Text="Gender:" VerticalOptions="End"/>
 
     <Button x:Name="radioButton1" Grid.Row="8" Grid.Column="0" Image="unchecked" Clicked="OnRadioClicked" HorizontalOptions="Start" VerticalOptions="Start"/>
     <Label  Grid.Row="8" Grid.Column="0" Text="Male" HorizontalOptions="Center" VerticalOptions="Center"/>
 
-    <Button x:Name="radioButton2" Grid.Row="9" Grid.Column="0" Image="unchecked" Clicked="OnFemaleRadioClicked" HorizontalOptions="Start" VerticalOptions="Start"/>
+    <Button x:Name="radioButton2" Grid.Row="9" Grid.Column="0" Image="unchecked" Clicked="OnFemaleRadioClicked" HorizontalOptions="Start" VerticalOptions="Start" TextColor="Red"/>
     <Label  Grid.Row="9" Grid.Column="0" Text="Female" HorizontalOptions="Center" VerticalOptions="Center"/>
 
     <Label Grid.Row="10" Grid.Column="0"  Text="Facility:"/>
     <Picker x:Name="FacilityText" Grid.Row="11" Grid.Column="0"/>
 
-	<Button x:Name="SearchBtn" Grid.Row="12" Grid.Column="0"  Clicked="OnSearchClicked" 
-    HorizontalOptions="End" TextColor="Red" FontSize="20" Image="search"/>
-
+	<Button x:Name="SearchBtn" Grid.Row="12" Grid.Column="0" Clicked="OnSearchClicked" HorizontalOptions="End" TextColor="Red" FontSize="20" Image="search"/>
+   
    </Grid>
 
-<!--      <Label Text="Product from ComTec" HorizontalOptions="End"></Label>-->
+<!--      <Label Text="Product from ComTec" HorizontalOptions="End"></Label>    Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="1" Grid.RowSpan="20"-->
 <!--   </Frame>-->
+
 <!--</Grid></RelativeLayout>-->
+
+
+
    </ScrollView>
 </ContentPage>

@@ -5,15 +5,17 @@ namespace SearchPatient
 {
 	public class SearchData
 	{
-		public SearchData(string Name, string Address, string contacts,string GetDriections)
+		public SearchData(string Name, string Address, string ContactTxt,string contacts,string GetDriections)
 		{
 			this.name=Name;
 			this.address = Address;
+			this.contacttext = ContactTxt;
 			this.contact = contacts;
 			this.ButtonTitle = GetDriections;
 		}
 		public string name {get; set;}
 		public string address {get; set;}
+		public string contacttext{get; set;}
 		public string contact{get; set;}
 		public string ButtonTitle{ get; set;}
 	}

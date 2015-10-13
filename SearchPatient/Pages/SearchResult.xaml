@@ -1,21 +1,37 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SearchPatient.SearchResult">
 	<ContentPage.Content>
-        <ListView  x:Name="listView" RowHeight="140">
+	<ScrollView > 
+        <ListView  x:Name="listView" RowHeight="120">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Orientation="Vertical"> 
-                           <StackLayout Orientation="Horizontal">                         
-                                <Label Text="{Binding name}" VerticalOptions="Start"/>
-                                <Label Text="{Binding address}" HorizontalOptions="Start"/>
-                                <Button Text="{Binding contact}" HorizontalOptions="Start"/>
-                                <Button Text="{Binding ButtonTitle}" HorizontalOptions="Center"/>
-                           </StackLayout>
-                       </StackLayout>                      
+<!--                    <Grid>
+                     <Grid.RowDefinitions>
+                    	<Grid.RowDefinition Height="Auto"></Grid.RowDefinition>
+                    	<Grid.RowDefinition Height="Auto"></Grid.RowDefinition>
+                    	<Grid.RowDefinition Height="Auto"></Grid.RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                    	<Grid.ColumnDefinition Width="30"></Grid.ColumnDefinition>
+                    	<Grid.ColumnDefinition Width="*"></Grid.ColumnDefinition>
+                	<Grid.ColumnDefinition Width="*"></Grid.ColumnDefinition>
+                   </Grid.ColumnDefinitions>-->
+                   
+                        <StackLayout Orientation="Vertical">   
+                         	<StackLayout Orientation="Horizontal">                                              
+                                <Label Text="{Binding name}" VerticalOptions="Start" HorizontalOptions="StartAndExpand"/>
+                                <Label Text="{Binding address}" VerticalOptions="Start" HorizontalOptions="StartAndExpand"/>  
+                                <Label Text="{Binding contactlbl}" VerticalOptions="Start" HorizontalOptions="StartAndExpand"/>                                 
+                                <Button Text="{Binding contact}" VerticalOptions="Start" HorizontalOptions="StartAndExpand"/>
+                                <Button Text="{Binding ButtonTitle}" VerticalOptions="Start" HorizontalOptions="StartAndExpand"/>
+                            </StackLayout >
+                       </StackLayout> 
+				<!--</Grid>-->
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+       </ScrollView >
     </ContentPage.Content>
 </ContentPage>
